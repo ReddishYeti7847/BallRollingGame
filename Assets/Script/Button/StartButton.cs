@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Toggle_Low : MonoBehaviour
+public class StartButton : MonoBehaviour
 {
-    private GameObject titlescene;
+    public GameObject titlescene;
 
     // Start is called before the first frame update
     void Start()
     {
-        this.titlescene = GameObject.Find("GameObject");
+        titlescene = GameObject.Find("TitleGameObject");
     }
 
     // Update is called once per frame
@@ -17,9 +17,9 @@ public class Toggle_Low : MonoBehaviour
     {
         
     }
-
-    public void OnValueChange()
+    
+    public void OnClick()
     {
-        titlescene.gameObject.GetComponent<TitleSceneScript>().ChangeSpeed(2, 4);
+        titlescene.GetComponent<TitleSceneScript>().ChangeScene();
     }
 }

@@ -3430,7 +3430,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1688801043}
-  - component: {fileID: 1688801045}
   - component: {fileID: 1688801044}
   m_Layer: 0
   m_Name: Floor
@@ -3505,20 +3504,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a5cceabed82fd64ab5b8ab0e4d96b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FloorSpeed: 4
-  BallSpeed: 5
---- !u!114 &1688801045
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688801042}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2f2341fbf0c0d541a68a35635703556, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  floorspeed: 0
+  ballspeed: 0
 --- !u!1 &1750503262
 GameObject:
   m_ObjectHideFlags: 0

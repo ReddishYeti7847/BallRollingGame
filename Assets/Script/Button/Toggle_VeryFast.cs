@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Toggle_Fast : MonoBehaviour
+public class Toggle_VeryFast : MonoBehaviour
 {
-    private GameObject titlescene;
+    public GameObject titlescene;
 
     // Start is called before the first frame update
     void Start()
     {
-        this.titlescene = GameObject.Find("GameObject");
+        this.titlescene = GameObject.Find("TitleGameObject");
     }
 
     // Update is called once per frame
@@ -18,8 +18,8 @@ public class Toggle_Fast : MonoBehaviour
         
     }
 
-    public void OnValueChange()
+    public void OnValueChange(bool ischecked)
     {
-        titlescene.gameObject.GetComponent<TitleSceneScript>().ChangeSpeed(8, 5);
+        titlescene.GetComponent<TitleSceneScript>().ChangeSpeed(18, 5);
     }
 }
