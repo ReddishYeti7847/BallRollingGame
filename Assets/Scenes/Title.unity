@@ -360,7 +360,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 285999116}
         m_MethodName: OnValueChange
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -384,6 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbf878f58c0494941af3b7a7898d16a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titlescene: {fileID: 0}
 --- !u!1 &298296534
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,7 +653,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!114 &476827846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,6 +666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d4c3cbbb4c4c5c4f8b79d7dfecb2dd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titlescene: {fileID: 0}
 --- !u!1 &483777883
 GameObject:
   m_ObjectHideFlags: 0
@@ -1264,6 +1266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b28e1767cd17b24babe36df3f4618c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titlescene: {fileID: 0}
 --- !u!1 &1078190114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,6 +1412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 519b1ed3c1ae70442ba3b6b4d57e5ec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titlescene: {fileID: 0}
 --- !u!1 &1079729008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,9 +1710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464b9e3866a7b834dbb36af9f78d2b2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floorspeed: 4
-  ballspeed: 5
-  titlescene: {fileID: 0}
+  testc: 1
 --- !u!4 &1208712716
 Transform:
   m_ObjectHideFlags: 0
@@ -1991,7 +1993,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!114 &1643246016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2004,6 +2006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6097feaf23e232645beef710cb6fa923, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  titlescene: {fileID: 0}
 --- !u!1 &1646281314
 GameObject:
   m_ObjectHideFlags: 0

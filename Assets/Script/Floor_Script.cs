@@ -22,6 +22,9 @@ public class Floor_Script : MonoBehaviour
         //下の書き方はエラーになる②
         //floorspeed = TitleSceneScript.GetFloorSpeed();
         //ballspeed = TitleSceneScript.GetBallSpeed();
+
+        Debug.Log(floorspeed);
+        Debug.Log(ballspeed);
     }
 
     // Update is called once per frame

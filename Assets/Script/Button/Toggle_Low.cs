@@ -10,6 +10,7 @@ public class Toggle_Low : MonoBehaviour
     void Start()
     {
         titlescene = GameObject.Find("TitleGameObject");
+        Debug.Log(titlescene.GetComponent<TitleSceneScript>().testc);
     }
 
     // Update is called once per frame
@@ -18,10 +19,20 @@ public class Toggle_Low : MonoBehaviour
 
     }
 
+    public void OnClick()
+    {
+
+    }
+
+    /*
+
     public void OnValueChange(bool ischecked)
     {
+        Debug.Log(123);
+
+        Debug.Log(titlescene.GetComponent<TitleSceneScript>().testc);
+        
         titlescene.GetComponent<TitleSceneScript>().ChangeSpeed(2, 4);
-        //titlescene.GetComponent<TitleSceneScript>().Test();
-        //Debug.Log(test);
     }
+    */
 }

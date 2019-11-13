@@ -14,12 +14,14 @@ public class TitleSceneScript : MonoBehaviour
     private static bool start = true;
     public static int floorspeed = 4;
     public static int ballspeed = 5;
-    public GameObject titlescene;
+
+    public int  testc = 1;
+    //public GameObject titlescene;
 
     // Start is called before the first frame update
     void Start()
     {
-        titlescene = GameObject.Find("TitleGameObject");
+        //titlescene = GameObject.Find("TitleGameObject");
         //floorspeed;
         //ballspeed;
     }
@@ -34,6 +36,9 @@ public class TitleSceneScript : MonoBehaviour
     {
         floorspeed = initfloorspeed;
         ballspeed = initballspeed;
+
+        Debug.Log(floorspeed);
+        Debug.Log(ballspeed);
     }
 
     public void ChangeScene()

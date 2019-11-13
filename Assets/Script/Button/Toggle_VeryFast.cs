@@ -22,4 +22,5 @@ public class Toggle_VeryFast : MonoBehaviour
     {
         titlescene.GetComponent<TitleSceneScript>().ChangeSpeed(18, 5);
     }
+ 
 }
