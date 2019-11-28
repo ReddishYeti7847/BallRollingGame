@@ -20,6 +20,7 @@ public class Toggle_Fast : MonoBehaviour
 
     public void OnValueChange(bool ischecked)
     {
-        titlescene.GetComponent<TitleSceneScript>().ChangeSpeed(8, 5);
+        //titlescene.GetComponent<TitleSceneScript>().ChangeSpeed(8, 5);
+        Debug.Log("速い");
     }
 }

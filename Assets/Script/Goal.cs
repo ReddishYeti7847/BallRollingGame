@@ -10,7 +10,7 @@ public class Goal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.floor = GameObject.Find("Floor");  //Floorオブジェクトを認識する
+        //this.floor = GameObject.Find("Floor");  //Floorオブジェクトを認識する
     }
 
     // Update is called once per frame

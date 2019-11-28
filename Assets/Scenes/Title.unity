@@ -284,6 +284,7 @@ GameObject:
   - component: {fileID: 285999114}
   - component: {fileID: 285999115}
   - component: {fileID: 285999116}
+  - component: {fileID: 285999117}
   m_Layer: 5
   m_Name: Toggle(low)
   m_TagString: Untagged
@@ -354,7 +355,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 483777885}
   toggleTransition: 1
   graphic: {fileID: 736911948}
-  m_Group: {fileID: 1084163121}
+  m_Group: {fileID: 285999117}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -385,6 +386,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titlescene: {fileID: 0}
+--- !u!114 &285999117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285999113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AllowSwitchOff: 0
 --- !u!1 &298296534
 GameObject:
   m_ObjectHideFlags: 0
@@ -636,13 +650,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1640178704}
   toggleTransition: 1
   graphic: {fileID: 82747639}
-  m_Group: {fileID: 1084163121}
+  m_Group: {fileID: 285999117}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 476827846}
         m_MethodName: OnValueChange
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1236,13 +1250,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 298296536}
   toggleTransition: 1
   graphic: {fileID: 572809889}
-  m_Group: {fileID: 1084163121}
+  m_Group: {fileID: 285999117}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 980799275}
         m_MethodName: OnValueChange
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1253,7 +1267,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 0
+  m_IsOn: 1
 --- !u!114 &980799275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1280,6 +1294,7 @@ GameObject:
   - component: {fileID: 1078190117}
   - component: {fileID: 1078190116}
   - component: {fileID: 1078190119}
+  - component: {fileID: 1078190120}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1350,8 +1365,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1078190119}
-        m_MethodName: OnClick
+      - m_Target: {fileID: 1078190120}
+        m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1413,6 +1428,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   titlescene: {fileID: 0}
+  toggleGroup: {fileID: 0}
+--- !u!114 &1078190120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078190114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348a53d58d1b573488308ff5767ac32a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titlescene: {fileID: 0}
+  toggle_group: {fileID: 285999117}
 --- !u!1 &1079729008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1574,7 +1604,6 @@ GameObject:
   - component: {fileID: 1084163119}
   - component: {fileID: 1084163118}
   - component: {fileID: 1084163117}
-  - component: {fileID: 1084163121}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1668,19 +1697,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1084163121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1084163116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1184210157, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AllowSwitchOff: 0
 --- !u!1 &1208712714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,13 +1992,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 826444274}
   toggleTransition: 1
   graphic: {fileID: 1924202235}
-  m_Group: {fileID: 1084163121}
+  m_Group: {fileID: 285999117}
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1643246016}
         m_MethodName: OnValueChange
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1993,7 +2009,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!114 &1643246016
 MonoBehaviour:
   m_ObjectHideFlags: 0

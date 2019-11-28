@@ -20,6 +20,7 @@ public class Toggle_Normal : MonoBehaviour
 
     public void OnValueChange(bool ischecked)
     {
-        titlescene.GetComponent<TitleSceneScript>().ChangeSpeed(4, 5);
+        //titlescene.GetComponent<TitleSceneScript>().ChangeSpeed(4, 5);
+        Debug.Log("普通");
     }
 }

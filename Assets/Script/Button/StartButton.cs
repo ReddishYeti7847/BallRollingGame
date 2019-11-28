@@ -12,7 +12,7 @@ public class StartButton : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        toggleGroup = ;
+        //toggleGroup = ;
         titlescene = GameObject.Find("TitleGameObject");
     }
 
@@ -24,11 +24,11 @@ public class StartButton : MonoBehaviour
     
     public void OnClick()
     {
-        string selectedLabel = toggleGroup.ActiveToggles()
+/*        string selectedLabel = toggleGroup.ActiveToggles()
             .First().GetComponentsInChildren<Text>()
             .First(t => t.name == "Label").text;
 
-        Debug.Log("selected " + selectedLabel);
+        Debug.Log("selected " + selectedLabel);*/
 
         titlescene.GetComponent<TitleSceneScript>().ChangeScene();
     }

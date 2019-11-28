@@ -65,6 +65,7 @@
     <Compile Include="Assets\Script\Ball_Jump.cs" />
     <Compile Include="Assets\Script\Button\ReturnButton.cs" />
     <Compile Include="Assets\Script\Button\StartButton.cs" />
+    <Compile Include="Assets\Script\Button\SubmitButton.cs" />
     <Compile Include="Assets\Script\Button\Toggle_Fast.cs" />
     <Compile Include="Assets\Script\Button\Toggle_Low.cs" />
     <Compile Include="Assets\Script\Button\Toggle_Normal.cs" />

@@ -19,9 +19,9 @@ public class Toggle_Low : MonoBehaviour
 
     }
 
-    public void OnClick()
+    public void OnValueChange(bool ischecked)
     {
-
+        Debug.Log("遅い");
     }
 
     /*
