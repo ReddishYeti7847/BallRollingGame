@@ -6,50 +6,61 @@ using UnityEngine.SceneManagement;
 public class Ball : MonoBehaviour
 {
     //スピード
-    public int floorspeed;
-    public int ballspeed;
+    public int ballspeed_x; //横方向のボールの速度
+    public int ballspeed_z; //縦方向のボールの速度
+    //位置
+    public Vector3 pos;
+    //ジャンプ
+    public Rigidbody rigidbody;
+    public int jumpcount;       //ジャンプ回数
+    public Vector3 jumpspeed;
     //カメラオブジェクト
     public GameObject mainCamera;
-
-    //private Rigidbody BallRigid;//PlayerオブジェクトのRigidbobyを保管する
-    //public float JumpSpeed;
-    private Vector3 pos;
 
     // Start is called before the first frame update
     void Start()
     {
-        floorspeed = TitleSceneScript.GetFloorSpeed();
-        ballspeed = TitleSceneScript.GetBallSpeed();
-        Debug.Log("floorspeed" + floorspeed);
-        Debug.Log("ballspeed" + ballspeed);
+        ballspeed_z = TitleSceneScript.GetFloorSpeed();
+        ballspeed_x = TitleSceneScript.GetBallSpeed();
+        Debug.Log("floorspeed" + ballspeed_z);
+        Debug.Log("ballspeed" + ballspeed_x);
+
+        rigidbody = this.GetComponent<Rigidbody>();
+        jumpspeed = new Vector3(0f, 200f, 0f);
 
         mainCamera = GameObject.Find("Main Camera");
-
-        //BallRigid = Ball.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
         //ボールを前に動かす
-        transform.Translate(0, 0, floorspeed * Time.deltaTime);
+        transform.Translate(0, 0, ballspeed_z * Time.deltaTime);
 
         //左に移動
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Translate(-ballspeed * Time.deltaTime, 0, 0);
+            transform.Translate(-ballspeed_x * Time.deltaTime, 0, 0);
         }
         //右に移動
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Translate(ballspeed * Time.deltaTime, 0, 0);
+            transform.Translate(ballspeed_x * Time.deltaTime, 0, 0);
         }
-
-        /* if (Input.GetKeyDown(KeyCode.Return))
+        //上にジャンプする。
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            //上にジャンプする。
-            BallRigid.AddForce(transform.up * JumpSpeed);
-        } */
+            if (jumpcount < 2)
+            {
+                jumpcount++;                    //ジャンプ回数を増やす
+                rigidbody.AddForce(jumpspeed);  //上方向の速度を加える
+            }
+        }
+        //着地判定(checksphereとかが気になる)
+        if (true)
+        {
+
+        }
 
         pos = this.transform.position;
 
