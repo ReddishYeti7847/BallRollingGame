@@ -11,6 +11,8 @@ public class Ball : MonoBehaviour
     //位置
     public Vector3 pos;
     //ジャンプ
+    public bool foot;   //床に触れているかどうか
+
     public Rigidbody rigidbody;
     public int jumpcount;       //ジャンプ回数
     public Vector3 jumpspeed;
@@ -56,11 +58,6 @@ public class Ball : MonoBehaviour
                 rigidbody.AddForce(jumpspeed);  //上方向の速度を加える
             }
         }
-        //着地判定(checksphereとかが気になる)
-        if (true)
-        {
-
-        }
 
         pos = this.transform.position;
 
@@ -72,6 +69,18 @@ public class Ball : MonoBehaviour
 
         //カメラを追従させる
         mainCamera.transform.position = new Vector3(pos.x, pos.y + 3, pos.z - 5);
+    }
+
+    //着地判定
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("触れた");
+
+        if (collision.gameObject.tag == "Floor")
+        {
+            //シーンを切り替える
+            jumpcount = 0;
+        }
     }
 
     //ボールが一定以上下に落ちたらゲームオーバーにする

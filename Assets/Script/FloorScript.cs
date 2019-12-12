@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Floor_Script : MonoBehaviour
+public class FloorScript : MonoBehaviour
 {
+
+
     // Start is called before the first frame update
     void Start()
     {

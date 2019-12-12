@@ -70,7 +70,7 @@
     <Compile Include="Assets\Script\Button\Toggle_Low.cs" />
     <Compile Include="Assets\Script\Button\Toggle_Normal.cs" />
     <Compile Include="Assets\Script\Button\Toggle_VeryFast.cs" />
-    <Compile Include="Assets\Script\Floor_Script.cs" />
+    <Compile Include="Assets\Script\FloorScript.cs" />
     <Compile Include="Assets\Script\Goal.cs" />
     <Compile Include="Assets\Script\MainSceneScript.cs" />
     <Compile Include="Assets\Script\TitleSceneScript.cs" />
